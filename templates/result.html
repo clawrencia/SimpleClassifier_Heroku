@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis Test</title>
+</head>
+<body>
+    <!-- Website Title -->
+    <div class="container">
+        <h2 class='container-heading'><span>Sentiment Classifier</span></h2>
+        <div class='description'>
+            <p>A Machine Learning Web App which is implemented using Flask</p>
+        </div>
+    </div>
+
+    <!-- Result -->
+    <div class="results">
+        {% if prediction==2 %}
+        <h1>Prediction: <span>Positive Review.</span></h1>
+        {% elif prediction==0 %}
+        <h1>Prediction: <span>Negative Review</span></h1>
+        {% elif prediction==1 %}
+        <h1>Prediction: <span>Neutral Review</span></h1>
+        {% endif %}
+    </div>
+
+</body>
+</html>
